@@ -1,0 +1,35 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDCzCCAfOgAwIBAgIQeCATWlTOXqii8QjYuW4THjANBgkqhkiG9w0BAQsFADAv
+    MS0wKwYDVQQDEyRjMGE0ZGUyMi0xMTQxLTRkNDItYmUzZi01ZjM5NmQ5M2IxZDgw
+    HhcNMTkwNTA3MDEyOTA4WhcNMjQwNTA1MDIyOTA4WjAvMS0wKwYDVQQDEyRjMGE0
+    ZGUyMi0xMTQxLTRkNDItYmUzZi01ZjM5NmQ5M2IxZDgwggEiMA0GCSqGSIb3DQEB
+    AQUAA4IBDwAwggEKAoIBAQCSeAz0ME6EQJLvwG9clIEzQH8SL0MK13OzEr7FjZCm
+    GhyXSNm4sOk0Z+jtGVutTex0O7qPBB4rPY7CAXrPz8DZVU9GS4K2N8VI386aw05S
+    aBjJFdMCSUT2FbeT6P0PqU27RWm/QdqePbKcL0eSnlUcJjDxPJDvex604X+8WGH0
+    t1/z8nlu1TySsi7OYcjoZOIkDc42Djjkp+ufhKG5gvlKPiN+0zK8zIP1fcleMPSx
+    rEe1U4MUNVDIxZGtqdl2a4qOwUqR5uaVezRB6fVo8BWElWAU7rHnwgGofEOfQpsO
+    4VjIMNmNWuu4cxqE2VxSWOTFAyg5cfKK3XfK0g7+u/+bAgMBAAGjIzAhMA4GA1Ud
+    DwEB/wQEAwICBDAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBC
+    sfdbFHrgtZMc9esQnfdmi2NZpTaGlviUNBiEL+WdVyVO2XVWGz8RVQwoITxN6oBl
+    NJ3fzvBsL8ErzMUHTakAXN4yxSjbA3Gm4h7mfs4JI67wfOZrWOZ40XMDLVcEXSGH
+    CCCK21PGpqlUe3dB+2VqjnS5/5Nc/Ngz3JPIX1MxiePtpyQAXRywuGBJNCNhKjej
+    6LwzJ2vTOj3lEBL9r4ch9BTdG0IanGlzxXn2LPYcJ59bq7uG4cMz0cLIdg9tkCsu
+    L5tCrVR/OSXiOS/83hR7aetajukdjDEldMkhizkXhSRr2u9Pmz+moIvu8KDltvPO
+    QQIS0AXZuoJy42jffQ0c
+    -----END CERTIFICATE-----
+  clusterName: jenkinsx-demo
+  jx-install-version: 2.0.90
+  kubeProvider: gke
+  projectID: jenkinsx-demo-239812
+  region: ""
+  secretsLocation: vault
+  server: https://104.199.170.20
+  systemVaultName: jx-vault-jenkinsx-demo
+  zone: asia-east1-a
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
